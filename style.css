@@ -1,37 +1,37 @@
 
 
 .header {
-padding: 40px 16px;
+padding: 40px;
 text-align: center;
-background-color: rgba(8, 248, 248, 0.219);
+background-color:azure;
 font-family: "latin" sans-serif   ;
  }
 
-a { color: blue; }
-
-.Adress { background-color:aquamarine; 
+.Adress { background-color:azure; 
         padding-top: 10px; 
         padding-bottom: 10px;
         padding-left: 20px;
         font-size: 110%;
+
+        border: 5px salmon;
      }
 
-nav{padding:40px }
+.nav-link { padding:8px 15px;
+            color: brown;}
+.nav-link:hover{ background-color:black;
+                 color:azure}
+.nav-link:active{color:blueviolet}
 
 
-.Introduction {background-color:blanchedalmond;
-padding: 10px; }
-
-
-
-
+.Introduction {background-color:azure;padding: 10px; }
 
 .main {
     max-width: 1000px;
     margin: 0 auto;
     padding:10px;
+    background-color: blanchedalmond;
+    border: 5px solid black;
   }
 
   
-h2,h3 { font-family: "latin-ext"  monospace;
-   }
+h2,h3 { font-family: "latin-ext"  monospace; }
