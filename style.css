@@ -1,0 +1,37 @@
+
+
+.header {
+padding: 40px 16px;
+text-align: center;
+background-color: rgba(8, 248, 248, 0.219);
+font-family: "latin" sans-serif   ;
+ }
+
+a { color: blue; }
+
+.Adress { background-color:aquamarine; 
+        padding-top: 10px; 
+        padding-bottom: 10px;
+        padding-left: 20px;
+        font-size: 110%;
+     }
+
+nav{padding:40px }
+
+
+.Introduction {background-color:blanchedalmond;
+padding: 10px; }
+
+
+
+
+
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding:10px;
+  }
+
+  
+h2,h3 { font-family: "latin-ext"  monospace;
+   }

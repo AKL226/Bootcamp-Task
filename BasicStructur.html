@@ -6,50 +6,58 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Arne Klussmann">
         <meta name="description" content="Lebenslauf CV">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap"
+        rel="stylesheet" />
         <title> Arnes KLußmann Lebenslauf </title> <!-- Das steht im Tab -->
     </head>
 
     <body> <!-- Das große ganze -->
-        <header>                
+        <header class="header">                
                 <h1> <u> Arne Klussmann </u> </h1> <!-- überschrift -->
                 <i> Specialist for production engineering </i> <br>
                 <i> <s> PLC programmer </s> </i> <br>
                 <i> <s> Electronics technician for operating technology </s> </i> <br>
                 <i> <s> Child </s> </i>
+                
+                <nav> 
+                    <a href="#Adress" > Adress</a> 
+                    <a href="#Introduction" > Introduction</a> 
+                    <a href="#Skills" > Skills </a> 
+                    <a href="#CV" > CV </a> 
+                    </nav>
+                
         </header>
-        <br>
-        <nav> 
-        <a href="#Adress" > Adress</a> 
-        <a href="#Introduction" > Introduction</a> 
-        <a href="#Skills" > Skills </a> 
-        <a href="#CV" > CV </a> 
-        </nav>
-        <main> <!-- Hauptteil -->
-            <article id="Adress" > <h2> Adress </h2>   
-            <blockquote> 
+
+            <main class="main"> <!-- Hauptteil -->
+            <article class="Adress" > <h2> Adress </h2>   
             <section> 
                 <address> 
-                 Street : XXX <br>
-                 PLZ:       28195    Ort: Bremen   <br>
-                 Geburtsort :   Bassum <br>
-                 Geburtsdatum : "Mozart" <br> <br>
-                
-                 <ol> <strong> <u> Contact </u> </strong> 
+                    <ul> 
+                    <li>  Street : XXX </li>
+                    <li>  PLZ:       28195    Ort: Bremen   </li>
+                    <li>  Geburtsort :   Bassum </li>
+                    <li> Geburtsdatum : "Mozart" </li>
+                    </ol>
+                </address>  
+
+                <section class="contact"> 
+                 <h2> Contact </h2>
+                 <ol> 
                  <li> Mobil: <a href="017320XXXXX"> Call </a> </li>
                  <li> Mail : <a href="mailto:ProKluss@gmail.com"> Email </a> </li>
                  <li> ICQ : <a href="205925707">Message </a> </li>
                  <li> Instagram <a href="https://www.instagram.com/klussiii/"> follow </a> </li>
                  </ol>
+                </section> 
                 
-                </address>
             </section>
             </article> 
-        </blockquote>
 
-
-        <article id="Introduction" > <h3>  Introduction </h3>
+        <article class="Introduction" > <h2>  Introduction </h2>
             <section> 
-               <blockquote>
                 <p> Hey and Moin, thanks that you spent your time to read this nice HTML. <br>
                     I'm from Bremen at the north in Germany. I live and working her since 2012. <br>
                     Befor I moved to Bremen, I lived at my Parents at <strong> Neubruchhausen </strong>. <br>
