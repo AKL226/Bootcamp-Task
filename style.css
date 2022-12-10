@@ -1,9 +1,7 @@
-
-
 .header {
 padding: 40px;
 text-align: center;
-background-color:azure;
+background-color: gainsboro;
 font-family: "latin" sans-serif   ;
  }
 
@@ -13,7 +11,7 @@ font-family: "latin" sans-serif   ;
         padding-left: 20px;
         font-size: 110%;
 
-        border: 5px salmon;
+        border: 5px solid black;
      }
 
 .nav-link { padding:8px 15px;
@@ -29,7 +27,7 @@ font-family: "latin" sans-serif   ;
     max-width: 1000px;
     margin: 0 auto;
     padding:10px;
-    background-color: blanchedalmond;
+    background-color: gainsboro;
     border: 5px solid black;
   }
 
