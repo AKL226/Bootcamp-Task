@@ -16,7 +16,10 @@ body{font-size: 15px;
         text-align: center ;
         background-color: gainsboro;
         max-width: 1000px;
-        margin: 0 auto;
+        margin: auto ;
+        margin-bottom:5px ;
+        margin-top: 5px;
+        
         border-radius: inherit;
         }
 
