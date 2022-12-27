@@ -1,48 +1,56 @@
 h1::before { content: '👱‍♂️';}
 h1::after { content: '🙃';}
+ol::first-letter{color: red}
+.Introduction::first-line{color:red}
 
 
-.header {
-padding: 40px;
-text-align: center ;
-background-color: gainsboro;
-max-width: 1000px;
-margin: 0 auto;
-border-radius: 20px;
-content: 'Datum';
- }
+
+body{font-size: 15px;
+      font-family: monospace; 
+      border-radius: 30px;}
 
 
-.Adress { background-color:rgb(241, 241, 227); 
+
+      .header {
+        padding: 40px;
+        text-align: center ;
+        background-color: gainsboro;
+        max-width: 1000px;
+        margin: 0 auto;
+        border-radius: inherit;
+        }
+
+        .Introduction {background-color:rgb(241, 241, 227);padding: 10px; 
+          border-radius: inherit;
+        }
+
+        .main {
+          max-width: 1000px;
+          margin: 0 auto;
+          padding: 35px;
+          background-color: gainsboro;
+          border: 5px solid black;
+          border-radius: inherit
+          }
+
+        .Adress { background-color:rgb(241, 241, 227); 
         padding-top: 10px; 
         padding-bottom: 10px;
         padding-left: 20px;
-        border-radius: 20px;
-         }
-
-.nav-link { padding: 8px 40px;
-            color: brown;}
-.nav-link:hover{ background-color:black;
-                 color:azure}
-.nav-link:active{color:blueviolet}
-
-.Introduction {background-color:rgb(241, 241, 227);padding: 10px; 
-                border-radius: 20px;
+        border-radius: inherit;
               }
 
-.main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 35px;
-    background-color: gainsboro;
-    border: 5px solid black;
-    border-radius: 20px;
-     }
+      .nav-link { padding: 8px 40px;
+            color: brown;}
+      .nav-link:hover{ background-color:black;
+                 color:azure}
+      .nav-link:active{color:blueviolet}
 
+      
 
-.article {font-family: monospace  ;
-  font-size: 1rem;}
-  
+    
+
+ 
 h1,h2,h3,h4 { font-family: sans-serif;
-  font-size: 2rem; }
+              font-size: 2rem; }
 
