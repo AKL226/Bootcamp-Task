@@ -60,4 +60,6 @@ h1,h2,h4 { font-family: sans-serif;
               border: 1px solid black;
               padding: 10px;}
 
+.past{display: none;}
 
+article:nth-child(1){background-color:bisque}
