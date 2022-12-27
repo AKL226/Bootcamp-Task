@@ -19,7 +19,6 @@ body{font-size: 15px;
         margin: auto ;
         margin-bottom:5px ;
         margin-top: 5px;
-        
         border-radius: inherit;
         }
 
@@ -55,14 +54,47 @@ h1,h2,h4 { font-family: sans-serif;
 .experience-subheading{ display: inline-block;
                         border: 1px solid black;}
 
+.Impressum{
+text-align: center;
+padding-top: 20px;}
+
+
+
 .adress-data{display: inline-block;
-  border: 1px solid black;
-  padding: 10px;}
+  _border: 1px solid black;
+  _padding: 20px;
+  margin:20px;
+  position: relative;
+  left: -150px;
+  }
 
 .contact-data{display: inline-block;
-              border: 1px solid black;
-              padding: 10px;}
+              _border: 1px solid black;
+              _padding: 20px;
+              margin: 20px;
+              position: relative;
+  right: -150px;}
 
 .past{display: none;}
 
+
+
+
+
+
 article:nth-child(1){background-color:bisque}
+
+li{text-align: left;}
+
+.Introduction{position:relative;
+ left: -30px;
+ top: -30px ;
+border:  1px solid black;}
+
+.hire{position: absolute;
+  right: 100px;
+  top:100px;
+  padding: 30px;
+  background-color: aquamarine;
+  border-radius: 5px;
+}
