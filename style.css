@@ -39,7 +39,12 @@ html{ background-color: aqua;
                   font-size: 1.5em; 
                   padding: 1%;}
 
+     h3{ font-family: 'Courier New', Courier, monospace;
+                    font-size: 1.0em; 
+                    padding: 1%;}
 
+
+                  
     body{font-size: 1rem;
         font-family: monospace; 
         border-radius: 30px;}
@@ -53,16 +58,15 @@ html{ background-color: aqua;
         
       .Introduction {  border-radius: inherit; }
               
-      .main {
-          max-width: 1000px;
-          margin: 0 auto;
-          padding: 0%;
-          background-color: gainsboro;
-          border: 5px solid black;
-          border-radius: inherit}
+      .main {   max-width: 1000px;
+                margin: 0 auto;
+                padding: 0%;
+                background-color: gainsboro;
+                border: 5px solid black;
+                border-radius: inherit}
 
       .nav-link { padding: 10px;
-            color: brown;}
+                  color: brown;}
 
       .nav-link:hover{  background-color:black;
                         color:azure}
@@ -72,11 +76,11 @@ html{ background-color: aqua;
       .experience-subheading{ display: inline-block;
                         }
 
-      .Impressum{text-align: left;padding-top: 20px;}
+      .Impressum{text-align: left;padding: 1%;}
 
-      .adress-data{display: inline-block;margin:20px;}
+      .adress-data{display: inline-block;}
 
-      .contact-data{display: inline-block; margin: 20px;}
+      .contact-data{display: inline-block; }
 
       .past{display: none;}
 
@@ -94,3 +98,7 @@ html{ background-color: aqua;
             top:20px;
             padding: 30px;
             border-radius: 5px;}
+
+
+      .cv{ padding: 0%;
+           _border: 1px solid black;}
