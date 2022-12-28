@@ -3,9 +3,11 @@ h1::after { content: '🙃';}
 ol::first-letter{color: red}
 .Introduction::first-line{color:red}
 
-html{font-size: 20px;
-      
-      margin: 2mm;}
+html{font-size: 20px;margin: 2mm;}
+
+header{position: sticky;
+       top:0px }
+  
 
 @media screen and ( min-width:250mm) {
 html{ background-color: aqua;
@@ -21,106 +23,74 @@ html{ background-color: aqua;
   .hire{display: none;}}
 
 
-  div{color: rgb(236, 137, 17);
-      padding:0.5%;
-      margin: 0.5%;
-    font-size: 1em;}
+    div{color: rgb(236, 137, 17);
+        padding:0.1%;
+        margin-left: 1%;
+        font-size: 1em;}
 
 
-
-body{font-size: 1rem;
-      font-family: monospace; 
-      border-radius: 30px;}
-
-
-
-      .header {
-        padding: 40px;
-        text-align: center ;
-        background-color: gainsboro;        
-        border-radius: inherit;
-        }
-
-
-        
- 
-        h1,h2,h3,h4 { font-family: sans-serif;
-                font-size: 1.5em; 
-                padding: 1%;}
-  
-
-  
-        p{font-size: 80%;
+    p{  font-size: 80%;
         padding-left: 1%}
-       
-        li{font-size: 80%;
+     
+    li{ font-size: 80%;
         text-align: left;}
-       
 
-        .Introduction {  border-radius: inherit;
-               }
+    h1,h2,h3,h4 { font-family: sans-serif;
+                  font-size: 1.5em; 
+                  padding: 1%;}
 
-        .main {
+
+    body{font-size: 1rem;
+        font-family: monospace; 
+        border-radius: 30px;}
+
+
+
+      .header { padding: 40px;
+                text-align: center ;
+                background-color: gainsboro;        
+                border-radius: inherit;}
+        
+      .Introduction {  border-radius: inherit; }
+              
+      .main {
           max-width: 1000px;
           margin: 0 auto;
           padding: 0%;
           background-color: gainsboro;
           border: 5px solid black;
-          border-radius: inherit
-          }
-
+          border-radius: inherit}
 
       .nav-link { padding: 10px;
             color: brown;}
 
-      .nav-link:hover{ background-color:black;
-                 color:azure}
-      .nav-link:active{color:blueviolet}
+      .nav-link:hover{  background-color:black;
+                        color:azure}
+      .nav-link:active{ color:blueviolet}
 
-
-
-.experience-heading{display: inline-block;}
-.experience-subheading{ display: inline-block;
+      .experience-heading{    display: inline-block;}
+      .experience-subheading{ display: inline-block;
                         }
 
-.Impressum{
-text-align: left;
-padding-top: 20px;}
+      .Impressum{text-align: left;padding-top: 20px;}
+
+      .adress-data{display: inline-block;margin:20px;}
+
+      .contact-data{display: inline-block; margin: 20px;}
+
+      .past{display: none;}
+
+      article:nth-child(1){background-color:rgb(231, 227, 221)}
 
 
 
-.adress-data{display: inline-block;
-   margin:20px;
-  }
+      .Introduction{position:relative;left: 5%;
+                    top: 3% ;
+                    border:  1px solid black;
+                    max-width: 80%;}
 
-.contact-data{display: inline-block;
-              margin: 20px;
-              }
-
-.past{display: none;}
-
-
-
-
-
-
-article:nth-child(1){background-color:rgb(231, 227, 221)}
-
-
-
-.Introduction{position:relative;
- left: 5%;
- top: 3% ;
-border:  1px solid black;
-max-width: 80%;}
-
-.hire{position: fixed;
-  right: 20px;
-  top:20px;
-  padding: 30px;
- 
-  border-radius: 5px;
-}
-
-header{position: sticky;
-top:0px }
+      .hire{position: fixed;
+            right: 20px;
+            top:20px;
+            padding: 30px;
+            border-radius: 5px;}
