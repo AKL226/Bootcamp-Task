@@ -91,10 +91,13 @@ li{text-align: left;}
  top: -30px ;
 border:  1px solid black;}
 
-.hire{position: absolute;
-  right: 100px;
-  top:100px;
+.hire{position: fixed;
+  right: 20px;
+  top:20px;
   padding: 30px;
   background-color: aquamarine;
   border-radius: 5px;
 }
+
+header{position: sticky;
+top:0px }
