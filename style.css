@@ -3,9 +3,9 @@ h1::after { content: '🙃';}
 ol::first-letter{color: red}
 .Introduction::first-line{color:red}
 
+html{font-size: 16px;}
 
-
-body{font-size: 15px;
+body{font-size: 1rem;
       font-family: monospace; 
       border-radius: 30px;}
 
