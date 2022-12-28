@@ -4,7 +4,29 @@ ol::first-letter{color: red}
 .Introduction::first-line{color:red}
 
 html{font-size: 20px;
-max-width: 200mm;}
+      
+      margin: 2mm;}
+
+@media screen and ( min-width:250mm) {
+html{ background-color: aqua;
+      max-width: 400mm;}
+.hire{background-color: beige;} }
+
+@media screen and ( max-width:250mm) {
+  .hire{background-color: rgb(22, 104, 104);}
+  html{font-size: 10px;
+    max-width: 200mm;} }
+
+@media print{
+  .hire{display: none;}}
+
+
+  div{color: rgb(236, 137, 17);
+      padding:0.5%;
+      margin: 0.5%;
+    font-size: 1em;}
+
+
 
 body{font-size: 1rem;
       font-family: monospace; 
@@ -15,11 +37,7 @@ body{font-size: 1rem;
       .header {
         padding: 40px;
         text-align: center ;
-        background-color: gainsboro;
-        
-        margin: auto ;
-        margin-bottom:5px ;
-        margin-top: 5px;
+        background-color: gainsboro;        
         border-radius: inherit;
         }
 
@@ -27,7 +45,7 @@ body{font-size: 1rem;
         
  
         h1,h2,h3,h4 { font-family: sans-serif;
-                font-size: 1em; 
+                font-size: 1.5em; 
                 padding: 1%;}
   
 
@@ -39,8 +57,7 @@ body{font-size: 1rem;
         text-align: left;}
        
 
-        .Introduction {_background-color:rgb(241, 241, 227);
-                    border-radius: inherit;
+        .Introduction {  border-radius: inherit;
                }
 
         .main {
@@ -101,7 +118,7 @@ max-width: 80%;}
   right: 20px;
   top:20px;
   padding: 30px;
-  background-color: aquamarine;
+ 
   border-radius: 5px;
 }
 
