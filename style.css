@@ -12,20 +12,24 @@ header{_position: sticky;
   
 
 @media screen and ( min-width:250mm) {
-html{ background-color: rgb(124, 73, 73);
-      max-width: 600mm;}
-.hire{background-color: beige;} 
-.nav{       display: inline-flex;
-  flex-direction:row;
-  border: 5px solid black;}}
+        html  { background-color: rgb(124, 73, 73);
+                max-width: 600mm;}
+        .hire { background-color: beige;} 
+        .nav  { display: inline-flex;
+                flex-direction:row;
+                border: 5px solid black;}
+              }
 
 @media screen and ( max-width:768px) {
-  .hire{background-color: rgb(22, 104, 104);}
-    html{font-size: 10px;
-        max-width: 200mm;} 
-        .nav{       display: inline-flex;
-          flex-direction:column;
-          border: 1px solid black;}}
+        .hire{  background-color: rgb(22, 104, 104);}
+
+         html{ font-size: 10px;
+               max-width: 200mm;} 
+
+         nav{  display: inline-flex;
+               flex-direction:column;
+               border: 1px solid black;}
+        }
 
 @media print{
   .hire{display: none;}}
@@ -83,9 +87,14 @@ html{ background-color: rgb(124, 73, 73);
                         color:azure}
       .nav-link:active{ color:blueviolet}
 
-      .experience-heading{    display: inline-block;}
-      .experience-subheading{ display: inline-block;
-                        }
+
+      .experience-header{ display:flex;
+                          border: 5px solid black;
+                          flex-direction: start;
+                          align-items: baseline;
+                          _justify-content:space-around;}
+
+      .experience-subheading{ flex-direction:}
 
       .Impressum{text-align: left;padding: 1%;}
 
