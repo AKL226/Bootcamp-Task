@@ -5,19 +5,27 @@ ol::first-letter{color: red}
 
 html{font-size: 20px;margin: 2mm;}
 
-header{position: sticky;
-       top:0px }
+header{_position: sticky;
+       top:0px;
+       }
+
   
 
 @media screen and ( min-width:250mm) {
 html{ background-color: rgb(124, 73, 73);
-      max-width: 400mm;}
-.hire{background-color: beige;} }
+      max-width: 600mm;}
+.hire{background-color: beige;} 
+.nav{       display: inline-flex;
+  flex-direction:row;
+  border: 5px solid black;}}
 
-@media screen and ( max-width:250mm) {
+@media screen and ( max-width:768px) {
   .hire{background-color: rgb(22, 104, 104);}
-  html{font-size: 10px;
-    max-width: 200mm;} }
+    html{font-size: 10px;
+        max-width: 200mm;} 
+        .nav{       display: inline-flex;
+          flex-direction:column;
+          border: 1px solid black;}}
 
 @media print{
   .hire{display: none;}}
@@ -51,6 +59,7 @@ html{ background-color: rgb(124, 73, 73);
         border-radius: 30px;}
 
 
+     
 
       .header { padding: 40px;
                 text-align: center ;
@@ -67,7 +76,8 @@ html{ background-color: rgb(124, 73, 73);
                 border-radius: inherit}
 
       .nav-link { padding: 10px;
-                  color: brown;}
+                  color: brown;
+                }
 
       .nav-link:hover{  background-color:black;
                         color:azure}
