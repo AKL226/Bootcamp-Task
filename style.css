@@ -29,7 +29,11 @@ header{_position: sticky;
          nav{  display: inline-flex;
                flex-direction:column;
                border: 1px solid black;}
-        }
+
+  .experience-header{ display: flex;
+                      flex-direction:column;
+                      border: 1px solid black;}}
+        
 
 @media print{
   .hire{display: none;}}
@@ -89,12 +93,15 @@ header{_position: sticky;
 
 
       .experience-header{ display:flex;
-                          border: 5px solid black;
-                          flex-direction: start;
+                          margin: 1%;
                           align-items: baseline;
-                          _justify-content:space-around;}
+                          justify-content:space-between;
+                          }
 
-      .experience-subheading{ flex-direction:}
+      .experience-heading{ _border: 1px solid black; }
+                         
+
+      .experience-subheading{ _border: 1px solid black }
 
       .Impressum{text-align: left;padding: 1%;}
 
