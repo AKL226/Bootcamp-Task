@@ -93,11 +93,20 @@ header{_position: sticky;
       .nav-link:active{ color:blueviolet}
 
 
+      .adress{ display: flex;
+               flex-direction:row;
+               height: 50mm;
+               _border: 1px solid black;
+               justify-content: center;
+               align-items: flex-start;}
+        
+                  
+
       .experience-header{ display:flex;
                           margin: 1%;
-                          align-items: baseline;
                           justify-content:space-between;
-                          }
+                          align-items: baseline;
+                                                    }
 
       .experience-heading{ _border: 1px solid black; }
                          
