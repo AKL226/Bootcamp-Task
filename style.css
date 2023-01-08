@@ -9,31 +9,46 @@ header{_position: sticky;
        top:0px;
        }
 
-  
+:root{--html-color:rgb( 188, 184, 177);
+      --header-color:rgb(252, 213, 206);
+      --header-background-color:linear-gradient(rosybrown,mistyrose);
+      --main-color: rgb(224, 175, 160);
+      --body-color: rgb(224, 175, 160);
+      --article-color: rgb(254, 200, 154);
+      --h-color:linear-gradient(rgb(224, 175, 160) 0.1em,orange 1em,red 0em);
+      --info-color:rgb(22, 104, 104); 
+      --footer-color:  linear-gradient(rgb(224, 175, 160),red);
+      --border-color:black;
+
+      --navlink-color:brown;
+      --hover-color:azure;
+      --hoverbackground-color:black;
+      --activeLink-color:blueviolet}
+
 
 @media screen and ( min-width:250mm) {
-        html  { background-color: rgb( 188, 184, 177);
+        html  { background-color: var(--html-color);
                 max-width: 600mm;}
-        .hire { background-color: beige;} 
+        .hire { background-color: var(--info-color)} 
         .nav  { display: inline-flex;
                 flex-direction:row;
-                border: 5px solid black;}
+                border: 5px solid var(--border-color)}
                }
               
 
 @media screen and ( max-width:768px) {
-        .hire{  background-color: rgb(22, 104, 104);}
+        .hire{  background-color: var(--hire-color);}
 
          html{ font-size: 10px;
                max-width: 200mm;} 
 
          nav{  display: inline-flex;
                flex-direction:column;
-               border: 1px solid black;}
+               border: 1px solid var(--border-color);}
 
   .experience-header{ display: flex;
                       flex-direction:column;
-                      border: 1px solid black;} 
+                      border: 1px solid var(--border-color);} 
 
               .adress{ display: flex;
                         flex-direction:column;
@@ -49,8 +64,7 @@ header{_position: sticky;
   .hire{display: none;}}
 
 
-    div{_color: rgb(248, 237, 235);
-        padding:0.1%;
+    div{padding:0.1%;
         margin-left: 1%;
         font-size: 1em;}
 
@@ -67,8 +81,7 @@ header{_position: sticky;
                   padding-left: 1%;
                   }
 
-                  h2{background-image: linear-gradient(rgb(224, 175, 160) 0.1em,orange 1em,red 0em);}
-
+                  h2{background-image: var(--h-color);}
 
      h3{ font-family: monospace;
                     font-size: 1.0em; 
@@ -85,8 +98,8 @@ header{_position: sticky;
 
       .header { padding: 40px;
                 text-align: center ;
-                background-color: rgb(252, 213, 206); 
-                background-image: linear-gradient(rosybrown,mistyrose);       
+                background-color: var(--header-color); 
+                background-image: var(--header-background-colorcolor);       
                 border-radius: inherit;
               }
         
@@ -95,17 +108,17 @@ header{_position: sticky;
       .main {   max-width: 1000px;
                 margin: 0 auto;
                 padding: 0%;
-                background-color: rgb(224, 175, 160);
-                border: 5px solid black;
+                background-color: var(--main-color);
+                border: 5px solid var(--border-color);
                 border-radius: inherit}
 
       .nav-link { padding: 10px;
-                  color: brown;
+                  color: var(--navlink-color);
                 }
 
-      .nav-link:hover{  background-color:black;
-                        color:azure}
-      .nav-link:active{ color:blueviolet}
+      .nav-link:hover{  background-color:var(--hoverbackground-color);
+                        color:var(--hover-color)}
+      .nav-link:active{ color:var(--activeLink-color)}
 
 
       .adress{ display: flex;
@@ -121,10 +134,10 @@ header{_position: sticky;
                           align-items: baseline;
                                                     }
 
-      .experience-heading{ _border: 1px solid black; }
+      .experience-heading{  }
                          
 
-      .experience-subheading{ _border: 1px solid black }
+      .experience-subheading{  }
 
       .Impressum{text-align: left;padding: 1%;}
 
@@ -134,7 +147,7 @@ header{_position: sticky;
 
       .past{display: none;}
 
-      article:nth-child(1){background-color:rgb(254, 200, 154)}
+      article:nth-child(1){background-color:var(--article-color)}
 
 
 
@@ -153,6 +166,6 @@ header{_position: sticky;
                       height: 50px;
                       justify-content: center;
                       align-items: center;
-                      background-image: linear-gradient(rgb(224, 175, 160),red);}
+                      background-image: var(--footer-color);}
 
 
