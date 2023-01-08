@@ -15,8 +15,8 @@ header{_position: sticky;
       --main-color: rgb(224, 175, 160);
       --body-color: rgb(224, 175, 160);
       --article-color: rgb(254, 200, 154);
-      --h-color:linear-gradient(rgb(224, 175, 160) 0.1em,orange 1em,red 0em);
-      --info-color:rgb(22, 104, 104); 
+      --h-color:linear-gradient(rgb(224, 175, 160) 0.1em,rgb(250, 197, 100) 1em,rgb(250, 116, 116) 0em);
+      --info-color:rgb(187, 128, 110); 
       --footer-color:  linear-gradient(rgb(224, 175, 160),red);
       --border-color:black;
 
@@ -25,6 +25,10 @@ header{_position: sticky;
       --hoverbackground-color:black;
       --activeLink-color:blueviolet}
 
+@media screen and (prefers-color-scheme: dark){
+                html {background-color: black}}
+
+  
 
 @media screen and ( min-width:250mm) {
         html  { background-color: var(--html-color);
@@ -37,7 +41,7 @@ header{_position: sticky;
               
 
 @media screen and ( max-width:768px) {
-        .hire{  background-color: var(--hire-color);}
+        .hire{  background-color: var(--info-color);}
 
          html{ font-size: 10px;
                max-width: 200mm;} 
@@ -57,7 +61,7 @@ header{_position: sticky;
                         align-items: flex-start;}
                     }
                     
-            
+    
         
 
 @media print{
