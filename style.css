@@ -162,7 +162,6 @@ header{_position: sticky;
 
       .Introduction{position:relative;left: 5%;
                     top: 3% ;
-                    border:  1px solid black;
                     max-width: 80%;}
 
       .hire{position: fixed;
@@ -173,8 +172,15 @@ header{_position: sticky;
             }
 
 
-            .hire:hover{  background-color: lightcyan;
-                          transition: 0.5s}
+.header .hire{  transition: 1s ease-in-out;}
+                       
+
+.header:hover .hire{  background-color: var(--hover-color);
+                     
+                      transform: scale(120%) ;
+                      translate: -10% 10%; }
+
+     
 
             .footer-cv{display: flex;
                       height: 50px;
