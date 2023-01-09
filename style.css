@@ -7,7 +7,7 @@ html{font-size: 20px;margin: 2mm;}
 
 header{_position: sticky;
        top:0px;
-       }
+           }
 
 :root{--html-color:rgb( 188, 184, 177);
       --header-color:rgb(252, 213, 206);
@@ -46,23 +46,20 @@ header{_position: sticky;
          html{ font-size: 10px;
                max-width: 200mm;} 
 
-         nav{  display: inline-flex;
+        nav{  display: inline-flex;
                flex-direction:column;
                border: 1px solid var(--border-color);}
 
-  .experience-header{ display: flex;
+        .experience-header{ display: flex;
                       flex-direction:column;
                       border: 1px solid var(--border-color);} 
 
-              .adress{ display: flex;
+         .adress{ display: flex;
                         flex-direction:column;
                         height: 50mm;
                         justify-content: center;
                         align-items: flex-start;}
                     }
-                    
-    
-        
 
 @media print{
   .hire{display: none;}}
@@ -120,15 +117,18 @@ header{_position: sticky;
                   color: var(--navlink-color);
                 }
 
-      .nav-link:hover{  background-color:var(--hoverbackground-color);
-                        color:var(--hover-color)}
+      .nav-link:hover{ 
+                        color:var(--hover-color);
+                        transition: 3s;
+                        background-color:var(--hoverbackground-color) ;
+                      }
       .nav-link:active{ color:var(--activeLink-color)}
 
 
-      .adress{ display: flex;
-              height: 50mm;
-               justify-content: center;
-               align-items: flex-start;}
+      .adress{  display: flex;
+                height: 50mm;
+                justify-content: center;
+                align-items: flex-start;}
         
                   
 
@@ -164,7 +164,12 @@ header{_position: sticky;
             right: 20px;
             top:20px;
             padding: 30px;
-            border-radius: 5px;}
+            border-radius: 5px;
+            }
+
+
+            .hire:hover{  background-color: lightcyan;
+                          transition: 0.5s}
 
             .footer-cv{display: flex;
                       height: 50px;
