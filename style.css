@@ -100,11 +100,10 @@ header{_position: sticky;
       .header { padding: 40px;
                 text-align: center ;
                 background-color: var(--header-color); 
-                background-image: var(--header-background-colorcolor);       
+                background-image: var(--header-background-color);       
                 border-radius: inherit;
               }
-        
-      .Introduction {  border-radius: inherit; }
+      
               
       .main {   max-width: 1000px;
                 margin: 0 auto;
@@ -143,11 +142,6 @@ header{_position: sticky;
                           align-items: baseline;
                                                     }
 
-      .experience-heading{  }
-                         
-
-      .experience-subheading{  }
-
       .Impressum{text-align: left;padding: 1%;}
 
       .adress-data{display: inline-block;}
@@ -156,7 +150,7 @@ header{_position: sticky;
 
       .past{display: none;}
 
-      article:nth-child(1){background-color:var(--article-color)}
+      _article:nth-child(1){background-color:var(--article-color)}
 
 
 
