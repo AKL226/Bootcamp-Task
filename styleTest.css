@@ -1,15 +1,15 @@
-html{ font-size: 20px;margin: 2mm;
-    background-color:bisque;}
+html{   font-size: 20px;margin: 2mm;
+        background-color:bisque;}
 
 
-       div{height: auto;
+       div{     height: auto;
                 max-width: auto;
                 margin: 10px;
                 padding: 20px;}
 
 
 
-     .row{ display: flex;
+     .row{  display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             border: 5px solid saddlebrown ;
@@ -20,9 +20,6 @@ html{ font-size: 20px;margin: 2mm;
             justify-content: end;
                         }
           
-         
-
-
             .classRow{background-color: aqua;}
             .row :nth-child(1) {order: 6;}
             .row :nth-child(2) {order: 5;}
@@ -31,11 +28,6 @@ html{ font-size: 20px;margin: 2mm;
             .row :nth-child(5) {order: 2;}
             .row :nth-child(6) {order: 1;}
                      
-
-
-
-
-
             .column{ display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
@@ -52,4 +44,59 @@ html{ font-size: 20px;margin: 2mm;
              .column :nth-child(4) {align-self:stretch;} 
 
              .column :nth-child(5) {align-self:baseline;}
- 
+
+
+
+
+
+
+             .Grid-Area{ border: 1px solid saddlebrown;
+                        display: grid;
+                        grid-template-columns:  auto    auto    auto;
+                        grid-template-rows:     auto    auto    auto ;
+                        grid-template-areas:    "la     la      ."
+                                               "ba     .       ta"
+                                                "ma     ma      ma";
+                    
+                }
+                .ITEM{  border: 1px solid saddlebrown;
+                        background-color:aquamarine;
+                   
+                        border-radius: 10px;
+                        font: 25px Georgia;
+                        border: 5px solid #949494;
+                        text-align: center;}
+
+                        
+                    .header {grid-area: la ;}
+                    .main   {grid-area: ba;}
+                    .sidebar{grid-area: ta;}
+                    .footer {grid-area: ma;}
+
+
+
+
+
+
+                    .Grid-Value{ border: 1px solid saddlebrown;
+                        display: grid;
+                        grid-template-columns:  25%   25%    50%;
+                        grid-template-rows:     auto   auto  auto;
+                        grid-template-areas:    "la     la      ."
+                                                "ba     .       ta"
+                                                "ma     ma      ma";
+                    
+                }
+                .ITEM{  border: 1px solid saddlebrown;
+                        background-color:aquamarine;
+                   
+                        border-radius: 10px;
+                        font: 25px Georgia;
+                        border: 5px solid #949494;
+                        text-align: center;}
+
+                        
+                    .header {grid-area: la ;}
+                    .main   {grid-area: ba;}
+                    .sidebar{grid-area: ta;}
+                    .footer {grid-area: ma;}
