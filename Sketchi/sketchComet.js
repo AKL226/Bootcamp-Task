@@ -61,6 +61,8 @@ let posX =30;
 let posY =30;
 
 function  cometFR(cometR){
+
+
           background(0,0,0,10);
           fill("salmon");
           circle(cometR.x,cometR.y,20);
@@ -77,7 +79,7 @@ function  cometFR(cometR){
 
 function cometFL(cometL){
 
-  background(0,0,0,10);
+    background(0,0,0,10);
     fill    ("purple");
     circle  (cometL.x,cometL.y,20);
 
