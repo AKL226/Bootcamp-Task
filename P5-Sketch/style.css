@@ -1,0 +1,18 @@
+ .house {
+    background-color: antiquewhite;
+    margin: 00px;
+    padding: 0px;
+   
+  }
+
+  html{background-color: aqua;}
+
+  .comet {
+    background-color: black;
+    margin: 500;
+    padding: 000;
+  }
+  canvas {
+    display: block;
+  }
+  
