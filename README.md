@@ -1,3 +1,3 @@
-# Aufgaben von Bootcamp Europe zu den einzelnen Kapiteln
+# Bootcamp Aufgaben
 
 Task Files from Bootcamps Europe for each Chapter
