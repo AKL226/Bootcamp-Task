@@ -1,11 +1,8 @@
 
 let Auto = ["Motor",1.8, "Benzin","Lenkrad"];
+let SUV  = [["Motor",1.8, "Benzin","Lenkrad"],["Allrad"]];
 
-
-console.log(Auto);
-console.log(Auto.length);
-//// ---- Bedingung 
-let Bedingung = 3 ;
+let Bedingung = 5 ;
 
 
 //// ---- Ausgabe Array
@@ -16,9 +13,10 @@ if  (   Bedingung === 1) {
 if (    Bedingung === 2){ 
         console.log(Auto.pop(2))};   
 
-//// ---- Ausgabe ab 2 und wie viele
+//// ---- Ausgabe + Sitz an Stelle 0
 if (Bedingung === 3){ 
-    console.log(Auto.splice(2,2));}    
+    Auto.splice(1,0,'Sitz');
+    console.log(Auto);}    
 
 //// ---- Ausgabe mit extra Item
 if (Bedingung === 4) {
@@ -28,7 +26,8 @@ console.log(Auto.length);};
 
 //// ---- Ausgabe first ITEM
 if (Bedingung === 5) {
-    console.log(Auto.shift());};
+    const firstItem = Auto.shift()
+    console.log(firstItem);};
 
  //// ---- Ausgabe wird gedreht
 if (Bedingung === 6) {
@@ -45,7 +44,27 @@ if (Bedingung === 6) {
 
 
 
+if (Bedingung === 0){
+for ( let schleife = 0; schleife < Auto.length; schleife++ ){
+    console.log(Auto[schleife]);
+    for (let index of Auto){
+ 
+        console.log(index);
+    }
+}}
 
+if (Bedingung === 9){
+console.log(SUV[1][0]);
+
+console.log(Auto.filter(Number));
+console.log(Auto.filter(String));
+console.log(Auto.find(Number));
+console.log(Auto.find(String));
+console.log(Auto.slice(1));     // ab Position 2
+
+console.log(SUV.findLast);};
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
 // TODO: Implement the removeItem function
 
