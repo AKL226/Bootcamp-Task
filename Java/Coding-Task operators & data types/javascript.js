@@ -11,7 +11,7 @@ const Person = { "Vorname" : "Arne",
                 "Nachname": "Klußmann",
                 "Alter" : 35,               }
 
-console.log(Person);
+console.log(Person); 
 
 
 const Girls = [];
