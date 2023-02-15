@@ -42,4 +42,20 @@ let b = calc(Arne,a);
 console.log(b);
 
 
+
+
+function filter_list(l,zahlen) {
+  // Return a new array with the strings filtered out
+  
+  for ( let schleife = 0; schleife < l.length; schleife++){
+    let a = [l].filter();
+
+    let lstring = l.concat(a) ;
+  
+  return lstring;}
+}
+
+console.log(filter_list([1,2,'a','b']));
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
