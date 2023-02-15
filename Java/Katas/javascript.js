@@ -1,45 +1,33 @@
-console.log("HEllo Arne Yeah"); 
 
-console.log("A"+"r"+"n"+"e")
-
-let Vorname = "Arne";
-let Nachname ="Klußmann"
-
-console.log(Vorname +" "+ Nachname);
-
-const Person = { "Vorname" : "Arne",
-                "Nachname": "Klußmann",
-                "Alter" : 35,               }
-
-console.log(Person);
-
-
-const Girls = [];
-Girls.push( "Gay","Eva","Lissy","Nathalie","Pia","Christin","Pia",
-            "Patricia","Lea","Charline","Alena","Arzu","Neele","Swanni",
-            "Johanna","Britta","Kristin","Chrstin","Merle",
-            "Maike","Stadthagen","Köln","Kreml","Hochzeit Theresa","Wichmann+Freimarkt",
-            "Rimini","Arzu","Stubu","Anja","Jasmin","Elena","Gesa","Olga","Silja","Pia","Mareike",
-            "Bulgarien","Yabu","Besuch in Dortmund","Helena",
-            )
-
-console.log(Girls.length);
-
-let anzahl = Girls.length;
-
-for ( let i = 0 ; i < anzahl; i++) { 
-console.log(Girls[i]);}
+let Auto = ["Motor",1, "Benzin","Lenkrad"];
+let SUV  = [["Motor",1.8, "Benzin","Lenkrad"],["Allrad"]];
 
 
 
-console.log(50 + 2 ===  52);
 
-console.log("333" === 333);
+function filterToArrayOfString (arrayElement){
+    return typeof arrayElement ==='string';
+  
+  }
 
-console.log((600 + 510) / 2);
-console.log(2 + 2);
+  function filterToArrayOfNumber (arrayElement){
+    return typeof arrayElement === 'number';
+  
+  }
+  console.log(Auto.filter(filterToArrayOfString));
+  console.log(SUV[1].filter(filterToArrayOfString)); // filter in array 2
 
+  console.log([1,2,'j','rz','hfhfhf',4,5].filter(filterToArrayOfNumber));
 
+function oneDigit (num){
 
-console.log( 5 === (25 / 5)); // Result: 5
-console.log(50 / 10); // Result: 5
+}
+
+const alpha = Array.from(Array(26)).map((e, i) => i + 65);
+console.log('Asci-Format');
+console.log(alpha);
+console.log('Asci-Format zu string gewandelt');
+const alphabet = alpha.map((x) => String.fromCharCode(x));
+console.log(alphabet);
+
+// create array von 26,  

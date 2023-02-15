@@ -1,84 +1,45 @@
+console.log("HEllo Arne Yeah"); 
 
-let Auto = ["Motor",1, "Benzin","Lenkrad"];
-let SUV  = [["Motor",1.8, "Benzin","Lenkrad"],["Allrad"]];
+console.log("A"+"r"+"n"+"e")
 
-let Bedingung = 9 ;
+let Vorname = "Arne";
+let Nachname ="Klußmann"
+
+console.log(Vorname +" "+ Nachname);
+
+const Person = { "Vorname" : "Arne",
+                "Nachname": "Klußmann",
+                "Alter" : 35,               }
+
+console.log(Person);
 
 
-//// ---- Ausgabe Array
-if  (   Bedingung === 1) {
-        console.log(Auto)};    
+const Girls = [];
+Girls.push( "Gay","Eva","Lissy","Nathalie","Pia","Christin","Pia",
+            "Patricia","Lea","Charline","Alena","Arzu","Neele","Swanni",
+            "Johanna","Britta","Kristin","Chrstin","Merle",
+            "Maike","Stadthagen","Köln","Kreml","Hochzeit Theresa","Wichmann+Freimarkt",
+            "Rimini","Arzu","Stubu","Anja","Jasmin","Elena","Gesa","Olga","Silja","Pia","Mareike",
+            "Bulgarien","Yabu","Besuch in Dortmund","Helena",
+            )
 
-//// ---- Ausgabe nur ITEM 2 im Array
-if (    Bedingung === 2){ 
-        console.log(Auto.pop(2))};   
+console.log(Girls.length);
 
-//// ---- Ausgabe + Sitz an Stelle 0
-if (Bedingung === 3){ 
-    Auto.splice(1,0,'Sitz');
-    console.log(Auto);}    
+let anzahl = Girls.length;
 
-//// ---- Ausgabe mit extra Item
-if (Bedingung === 4) {
-Auto.push("Arne"); 
-console.log(Auto);
-console.log(Auto.length);};
-
-//// ---- Ausgabe first ITEM
-if (Bedingung === 5) {
-    const firstItem = Auto.shift()
-    console.log(firstItem);};
-
- //// ---- Ausgabe wird gedreht
-if (Bedingung === 6) {
-    console.log(Auto.reverse());};   
-
- //// ---- Ausgabe zusammenfügen von Arrays
- if (Bedingung === 7) {
-    console.log(Auto.concat(Auto));};   
-
- //// ---- Ausgabe bestimmte länge 
- if (Bedingung === 8) {
-    Auto.length = 2;
-    console.log(Auto);};  
+for ( let i = 0 ; i < anzahl; i++) { 
+console.log(Girls[i]);}
 
 
 
-if (Bedingung === 0){
-for ( let schleife = 0; schleife < Auto.length; schleife++ ){
-    console.log(Auto[schleife]);
-    for (let index of Auto){
- 
-        console.log(index);
-    }
-}}
+console.log(50 + 2 ===  52);
 
-if (Bedingung === 9){
-console.log(SUV[1][0]);
+console.log("333" === 333);
 
-console.log(Auto.filter(Number));
-console.log(Auto.filter(String));
-console.log(Auto.find(Number));
-console.log(Auto.find(String));}
+console.log((600 + 510) / 2);
+console.log(2 + 2);
 
-//console.log(Auto.slice(1));     // ab Position 2
 
-//console.log(SUV.findLast);};
 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
-
-// TODO: Implement the removeItem function
-
-//const ainmals = ["Dog", "Cat", "Lion"];
-//console.log(removeItem(ainmals, 1));
-// result should be: ["Cat", "Lion"]
-
-//console.log(ainmals);
-// result should be still: ["Dog", "Cat", "Lion"]
-
-//const fruits = ["Watermelon", "Banana", "Cherry", "Kiwi", "Pineapple", "Apple"];
-//console.log(removeItem(fruits, 3));
-// result should be: ["Watermelon", "Banana", "Kiwi", "Pineapple", "Apple"]
-
-//console.log(fruits);
-// result should be still: ["Watermelon", "Banana", "Cherry", "Kiwi", "Pineapple", "Apple"]
+console.log( 5 === (25 / 5)); // Result: 5
+console.log(50 / 10); // Result: 5
