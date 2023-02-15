@@ -1,8 +1,8 @@
 
-let Auto = ["Motor",1.8, "Benzin","Lenkrad"];
+let Auto = ["Motor",1, "Benzin","Lenkrad"];
 let SUV  = [["Motor",1.8, "Benzin","Lenkrad"],["Allrad"]];
 
-let Bedingung = 5 ;
+let Bedingung = 9 ;
 
 
 //// ---- Ausgabe Array
@@ -59,10 +59,11 @@ console.log(SUV[1][0]);
 console.log(Auto.filter(Number));
 console.log(Auto.filter(String));
 console.log(Auto.find(Number));
-console.log(Auto.find(String));
-console.log(Auto.slice(1));     // ab Position 2
+console.log(Auto.find(String));}
 
-console.log(SUV.findLast);};
+//console.log(Auto.slice(1));     // ab Position 2
+
+//console.log(SUV.findLast);};
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
