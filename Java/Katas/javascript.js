@@ -109,3 +109,22 @@ let digiSum =0;
           
 
 DigiSize(999);
+
+
+// -------------------  schleifen hoch und runter-------------------------------------
+
+
+function  schleifeWhile(n){
+  let i=0;
+  while (i <=n){
+  console.log(i)
+  i= i +2;
+  }}
+
+
+  schleifeWhile(25);
+
+  for (let i = 0; i < Auto.length; i++) {
+   console.log(Auto[i]);
+   
+  }
