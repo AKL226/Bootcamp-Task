@@ -128,3 +128,57 @@ function  schleifeWhile(n){
    console.log(Auto[i]);
    
   }
+
+
+  // ------------------- Kata 6 -------------------------------------
+
+
+function  oddnumber(n1,n2,NumArr){
+
+  let y = n1;
+  let x = y % 2 ;
+  
+  let xxx = (n2 - n1) / 2;
+  let laenge = Math.round(xxx);
+  console.log(laenge);
+  let d= 0;
+  
+  if ( x=== 1){ let i = n1+1; 
+               const NumArr = new Array(laenge);
+                while (i <= n2){ 
+                const inhalt = String(i); 
+              
+                NumArr[d] = inhalt; 
+                NumArr.push(inhalt);
+                d ++;
+                if (d === laenge){
+                  
+                  console.log(NumArr.join(","));
+             
+                }
+                i= i +2; }
+               }
+   else{            
+        let i = n1; 
+        const NumArr = new Array(laenge);
+
+        while (i <= n2){  
+          while (i <= n2){ 
+                const inhalt = String(i); 
+              
+                NumArr[d] = inhalt; 
+                NumArr.push(inhalt);
+                d ++;
+                if (d === laenge){
+                  
+                  console.log(NumArr.join(","));
+               
+                }
+                i= i +2; }}
+       
+          } 
+
+        }
+
+ 
+oddnumber(10,26);
