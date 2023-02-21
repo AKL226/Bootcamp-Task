@@ -20,7 +20,7 @@ Girls.push( "Gay","Eva","Lissy","Nathalie","Pia","Christin","Pia",
             "Johanna","Britta","Kristin","Chrstin","Merle",
             "Maike","Stadthagen","Köln","Kreml","Hochzeit Theresa","Wichmann+Freimarkt",
             "Rimini","Arzu","Stubu","Anja","Jasmin","Elena","Gesa","Olga","Silja","Pia","Mareike",
-            "Bulgarien","Yabu","Besuch in Dortmund","Helena",
+            "Bulgarien","Yabu","Besuch in Dortmund","Helena","Sina",
             )
 
 console.log(Girls.length);
