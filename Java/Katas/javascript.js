@@ -132,8 +132,7 @@ function  schleifeWhile(n){
 
   // ------------------- Kata 6 -------------------------------------
 
-
-function  oddnumber(n1,n2,NumArr){
+function oddnumber(n1,n2){
 
   let y = n1;
   let x = y % 2 ;
@@ -143,42 +142,108 @@ function  oddnumber(n1,n2,NumArr){
   console.log(laenge);
   let d= 0;
   
-  if ( x=== 1){ let i = n1+1; 
-               const NumArr = new Array(laenge);
-                while (i <= n2){ 
-                const inhalt = String(i); 
-              
-                NumArr[d] = inhalt; 
-                NumArr.push(inhalt);
-                d ++;
-                if (d === laenge){
-                  
-                  console.log(NumArr.join(","));
-             
-                }
-                i= i +2; }
-               }
-   else{            
-        let i = n1; 
-        const NumArr = new Array(laenge);
-
-        while (i <= n2){  
+  if ( x=== 1){ let i = n1+1;  const NumArr = new Array(laenge);
           while (i <= n2){ 
                 const inhalt = String(i); 
               
                 NumArr[d] = inhalt; 
                 NumArr.push(inhalt);
                 d ++;
-                if (d === laenge){
-                  
-                  console.log(NumArr.join(","));
-               
+
+          if (d === laenge){ return NumArr.join(",");}
+                 
+                i= i +2; }
+               }
+   else{let i = n1; const NumArr = new Array(laenge);
+          while (i <= n2){ 
+                const inhalt = String(i); 
+              
+                NumArr[d] = inhalt; 
+                NumArr.push(inhalt);
+                d ++;
+          if (d === laenge){ return NumArr.join(",");
+                
                 }
                 i= i +2; }}
-       
-          } 
-
         }
 
- 
-oddnumber(10,26);
+console.log(oddnumber(9,14));
+
+
+  // ------------------- Kata 6 verkürzt ---------------------------------
+
+  function oddnumberShort(n1,n2){
+
+    let y = n1;
+    let x = y % 2 ;
+    let laenge = Math.round((n2 - n1) / 2);
+    let d= 0;
+    console.log(laenge);
+    
+    if ( x=== 1){ let i = n1+1;  const NumArr = new Array(laenge);
+            while (i <= n2){ 
+                  const inhalt = String(i); 
+                  NumArr[d] = inhalt;           
+                  d ++;
+                  if (d === laenge){ return NumArr.join();}
+                  i= i +2; }
+                 }
+                 
+     else{let i = n1; const NumArr = new Array(laenge);
+            while (i <= n2){ 
+                  const inhalt = String(i); 
+                  NumArr[d] = inhalt; 
+                  d ++;
+                  if (d === laenge){ return NumArr.join();}
+                  i= i +2; }}
+                  }
+  
+  console.log(oddnumberShort(4,14));
+
+    // ------------------- counting sheep ---------------------------------
+
+    function countingSheep(){
+      const sheep = [true,  true,  true,  false,
+        true,  true,  true,  true ,
+        true,  false, true,  false,
+        true,  false, false, true ,
+        true,  true,  true,  true ,
+        false, false, true,  false]
+        let count = sheep.filter(Boolean).length;
+       return count;
+        
+    }
+
+    console.log(countingSheep());
+
+
+      // ------------------- opposite Number---------------------------------
+
+      function oppositeN (n){
+        x = Math.sign(n);
+        if (x === 1 ){
+          let nn = -n;
+          return nn;
+        } else {
+          let nn = n+ (-n)+ (-n);
+          return nn;
+        }
+      
+      }
+
+      console.log(oppositeN(-44));
+
+        // ------------------- sum of positve---------------------------------
+
+
+
+        function positiveSum(arr) {
+          let sum = 0;
+            for (let i = 0; i < arr.length; ++i) {
+                if (arr[i] > 0) {sum += arr[i];}
+             }
+             return sum;}
+    
+    console.log(positiveSum([10, 10, 10, -6, -5, -6]));
+      
+   
