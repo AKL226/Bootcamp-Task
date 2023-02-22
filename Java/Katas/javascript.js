@@ -221,14 +221,14 @@ console.log(oddnumber(9,14));
 
       function oppositeN (n){
         x = Math.sign(n);
+        let nn;
         if (x === 1 ){
-          let nn = -n;
-          return nn;
+           nn = -n;
+        
         } else {
-          let nn = n+ (-n)+ (-n);
-          return nn;
-        }
-      
+          nn = n+ (-n)+ (-n);
+                 }
+        return nn;
       }
 
       console.log(oppositeN(-44));
@@ -246,4 +246,49 @@ console.log(oddnumber(9,14));
     
     console.log(positiveSum([10, 10, 10, -6, -5, -6]));
       
-   
+     // ------------------- return negative---------------------------------
+     function makeNegative(num) {
+      // Code?
+      let neg;
+      if (num < 0){
+        neg = num ;
+              } else {
+                neg = num - num -num;
+              }
+      return neg;
+    }
+
+    console.log(makeNegative(-3));
+
+
+    // ----------------  Number of People in the Bus -------------------
+
+    var number = function(busStops){
+      // Good Luck!
+      let mitfahrerx;
+      let rein;
+      let raus;
+      let arr = [0];
+    
+      
+      for ( let i =0 ; i< busStops.length ; i++){
+  
+        rein = busStops[i][0];
+        raus = busStops[i][1];
+        mitfahrerx = rein-raus;
+        arr[0] =  arr[0] + mitfahrerx; 
+     }
+      return arr[0];
+    }
+    
+
+console.log(number([[8,7],[12,12],[8,8],[12,1],[15,3],[7,3]]));
+
+var number = function(busStops){
+  let peopleInBus = 0;
+  busStops.forEach(([enter, left]) => {
+    peopleInBus += enter - left;
+  })
+  
+  return peopleInBus
+}
