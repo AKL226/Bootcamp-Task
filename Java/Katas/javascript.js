@@ -292,3 +292,83 @@ var number = function(busStops){
   
   return peopleInBus
 }
+
+
+// ---------- Reversed Strings ----------------
+
+function solution(str){
+  return str.split("").reverse().join("");
+
+}
+
+console.log(solution('world'));
+
+// --------- Even numbers in an array -----------
+
+
+function evenNumbersA(array, number) {  // good luck
+const turn = new Array (number);
+
+  for ( let i = 0; i< array.length; i++){
+      if ( array [i] % 2  === 0 ){  turn.push( array[i])}
+  }
+return turn.slice(-number);
+}
+
+console.log(evenNumbersA([1, 2, 3, 4, 5, 6, 7, 8, 9], 4));
+
+
+function evenNumbers(array, number) {
+  return array.filter(num => num % 2 == 0).slice(-number);
+}
+console.log(evenNumbers([1, 2, 3, 5, 7, 8, 9,8,8,8,10], 4));
+
+
+// ---- get the middle char
+
+function getMiddle(s){
+  //Code goes here!
+  let result = [];
+  if (s.length % 2 === 1 )
+  { let si = Math.round(s.length /2-1);
+    result= s[si]}
+
+  if (s.length % 2 === 0 ){
+      result.push(s[s.length/2 -1]);
+      result.push(s[s.length/2]);
+      let testTest = result.join('');
+      result=testTest;
+     }
+  return result;
+  }
+
+console.log(getMiddle("Testesteee"));
+
+function getMiddle(s) {
+  var middle = s.length / 2;
+  return (s.length % 2) 
+    ? s.charAt(Math.floor(middle))
+    : s.slice(middle - 1, middle + 1);
+}
+
+
+// ------------------ ISOGRAMM --------------------
+
+function isIsogram(str){
+  //...
+  let content =  str.toUpperCase();
+
+  for ( let i = 0; i < content.length ; i++)
+
+      { for ( let d = 0 ; d<= content.length; d++){
+       if (((content[d] === content[i]) && i<d))
+          {    return false;   }}}
+  
+         
+ return true;
+}
+
+console.log(isIsogram("abcF"));
+
+
+// -------- 
