@@ -371,4 +371,22 @@ function isIsogram(str){
 console.log(isIsogram("abcF"));
 
 
-// -------- 
+// -------- get count 
+
+
+function getCount(str) {
+  let d =0;
+  let content =  str.toUpperCase();
+  
+    for (let i = 0; i < content.length; i++){
+      
+          if (content[i] === 'A'){d++;}
+          if (content[i] === 'E' ){d++;}
+          if (content[i] === 'I' ){d++;}
+          if (content[i] === 'O' ){d++;} 
+          if (content[i] === 'U' ){d++;} 
+        }
+  
+    return d;
+  }
+console.log(getCount("aa hj e eFi uU "));
