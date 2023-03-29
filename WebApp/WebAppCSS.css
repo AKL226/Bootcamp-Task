@@ -1,0 +1,187 @@
+h1::before { content: '👱‍♂️';}
+h1::after { content: '🙃';}
+ol::first-letter{color: red}
+.Introduction::first-line{color:red}
+
+html{ font-size: 20px;margin: 2mm;
+      background-color: var(--html-color);}
+
+header{ top:1px;
+           }
+
+:root{--html-color:rgb(240, 237, 232);
+      --header-color:rgb(252, 213, 206);
+      --header-background-color:linear-gradient(rosybrown,mistyrose,rgb(240, 237, 232));
+      --main-color: mistyrose;
+      --body-color: mistyrose;
+      --article-color: rgb(254, 200, 154);
+      
+      --h-color:linear-gradient(mistyrose 90%, rgb(224, 175, 160));
+      --info-color:rgb(187, 128, 110); 
+      --footer-color:  linear-gradient(.25turn, rgb(224, 175, 160), mistyrose);
+      --border-color:black;
+
+      --navlink-color:brown;
+      --hover-color:azure;
+      --hoverbackground-color:black;
+      --activeLink-color:blueviolet}
+
+@media screen and (prefers-color-scheme: dark){
+                html {background-color: black}}
+
+  
+
+@media screen and ( min-width:760px) {
+        html  {    max-width: 500mm;}
+        .nav  { display: inline-flex;
+                flex-direction:row;
+                border: 5px solid var(--border-color)}
+
+        .main-article{  display: grid;
+                        grid-template-columns: 1fr 3fr;
+                        align-items:baseline;
+                  }
+           .adress{ display: flex;
+                    flex-direction: row;
+                    justify-content:space-around;
+               }}
+     
+              
+
+@media screen and ( max-width:760px) {
+        .hire{  background-color: var(--info-color);}
+       
+
+         html{ font-size: 10px;
+               max-width: 100mm;
+               } 
+
+        nav{  display: inline-flex;
+               flex-direction:column;
+               border: 1px solid var(--border-color);}
+
+         .adress{       display: flex;
+                        flex-direction:column;
+                        height: auto;
+                        justify-content:left;
+                        }}
+
+
+@media print{
+  .hire{display: none;}}
+
+
+    div{padding:0.1%;
+        margin-left: 10%;
+        font-size: 1em;}
+
+
+    p{  font-size: 80%; }
+      
+     
+    li{ font-size: 80%;
+        text-align: left;
+        margin:2%;
+        }
+     ul,ol{padding-left: 10%;}
+
+    h2,h4 { font-family: sans-serif;
+                  font-size: 1.5em; 
+                  padding-left: 4%;
+                  padding-right: 30%;
+                  
+                   }
+
+     h2{background-image: var(--h-color);}
+
+     h3{ font-family: monospace;
+                    font-size: 1.0em; 
+                    padding-left: 10%;
+                    padding-right: 30%;
+                    padding-top: 3%;}
+
+
+                  
+    body{font-size: 1rem;
+        font-family: monospace; 
+        border-radius: 30px;}
+
+    .H{text-align: left;}
+     
+    .text{padding-left: 10%;}
+
+      .header { padding: 40px;
+                text-align: center ;
+                background-color: var(--header-color); 
+                background-image: var(--header-background-color);       
+           
+              }
+      
+              
+      .main {   max-width: 1000px;
+                margin: 0 auto;
+                padding: 0%;
+                background-color: var(--main-color);
+                border: 0.1rem solid var(--border-color);
+                border-radius: inherit}
+
+      .nav-link { padding: 10px;
+                  color: var(--navlink-color);
+                  transition: background-color 1s ease-in-out;
+                 }
+
+      .nav-link:focus{  background-color: var(--navlink-color);
+                        outline-color: var(--main-colorr);
+                        outline-style: dotted;}
+
+
+      .nav-link:hover{  color:var(--hover-color);
+                        background-color:var(--hoverbackground-color) ;
+                      }
+
+      .nav-link:active{ color:var(--activeLink-color)}
+
+
+        
+                  
+
+      .experience-header{ display:inline-flex;
+                          margin: 1%;
+                          justify-content:space-between;
+                          align-items: baseline;
+                                                    }
+
+      .Impressum{text-align: left;padding: 1%;}
+
+      .adress-data{display: inline-block;}
+
+      .contact-data{display: inline-block; }
+
+      .past{display: none;}
+
+      .Introduction{position:relative;left: 5%;
+                    top: 3% ;
+                    max-width: 80%;}
+
+      .hire{position: fixed;
+            right: 20px;
+            top:20px;
+            padding: 30px;
+            border-radius: 5px;
+            }
+
+
+.header .hire{  transition: 1s ease-in-out;}
+                       
+
+.header:hover .hire{  background-color: var(--hover-color);
+                     
+                      transform: scale(120%) ;
+                      translate: -10% 10%; }
+
+ .footer-cv{display: flex;
+                      height: 50px;
+                      justify-content: center;
+                      align-items: center;
+                      background-image: var(--footer-color);}
+
