@@ -9,6 +9,8 @@ html{ font-size: 20px;margin: 2mm;
 header{ top:1px;
            }
 
+
+
 :root{--html-color:rgb(240, 237, 232);
       --header-color:rgb(252, 213, 206);
       --header-background-color:linear-gradient(rosybrown,mistyrose,rgb(240, 237, 232));
@@ -25,6 +27,9 @@ header{ top:1px;
       --hover-color:azure;
       --hoverbackground-color:black;
       --activeLink-color:blueviolet}
+
+
+
 
 @media screen and (prefers-color-scheme: dark){
                 html {background-color: black}}
@@ -92,7 +97,6 @@ header{ top:1px;
                   
                    }
 
-     h2{background-image: var(--h-color);}
 
      h3{ font-family: monospace;
                     font-size: 1.0em; 
@@ -116,6 +120,8 @@ header{ top:1px;
                 background-image: var(--header-background-color);       
            
               }
+
+ 
       
               
       .main {   max-width: 1000px;
@@ -184,4 +190,26 @@ header{ top:1px;
                       justify-content: center;
                       align-items: center;
                       background-image: var(--footer-color);}
+
+
+
+header.darkmode {
+            background: black;
+            color: white;
+          }
+
+html.darkmode {
+            background: black;
+            color: white;
+          }
+
+ main.darkmode {
+            background: black;
+            color: white;
+          }
+
+     h2.darkmode {
+            background: black;}
+     h3.darkmode {
+                  background: black;}
 
