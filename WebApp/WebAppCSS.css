@@ -12,7 +12,7 @@ header{ top:1px;
 
 
 :root{--html-color:rgb(240, 237, 232);
-      --header-color:rgb(252, 213, 206);
+      --header-color:black;
       --header-background-color:linear-gradient(rosybrown,mistyrose,rgb(240, 237, 232));
       --main-color: mistyrose;
       --body-color: mistyrose;
@@ -23,7 +23,7 @@ header{ top:1px;
       --footer-color:  linear-gradient(.25turn, rgb(224, 175, 160), mistyrose);
       --border-color:black;
 
-      --navlink-color:brown;
+      --navlink-color: black;
       --hover-color:azure;
       --hoverbackground-color:black;
       --activeLink-color:blueviolet}
@@ -36,7 +36,7 @@ header{ top:1px;
 
   
 
-@media screen and ( min-width:760px) {
+@media screen and ( min-width:910px) {
         html  {    max-width: 500mm;}
         .nav  { display: inline-flex;
                 flex-direction:row;
@@ -53,7 +53,7 @@ header{ top:1px;
      
               
 
-@media screen and ( max-width:760px) {
+@media screen and ( max-width:910px) {
         .hire{  background-color: var(--info-color);}
        
 
@@ -61,7 +61,7 @@ header{ top:1px;
                max-width: 100mm;
                } 
 
-        nav{  display: inline-flex;
+        nav{   display: inline-flex;
                flex-direction:column;
                border: 1px solid var(--border-color);}
 
@@ -110,13 +110,14 @@ header{ top:1px;
         font-family: monospace; 
         border-radius: 30px;}
 
-    .H{text-align: left;}
+    .H{text-align: left;
+    }
      
     .text{padding-left: 10%;}
 
       .header { padding: 40px;
                 text-align: center ;
-                background-color: var(--header-color); 
+                color: var(--header-color); 
                 background-image: var(--header-background-color);       
            
               }
@@ -132,6 +133,7 @@ header{ top:1px;
                 border-radius: inherit}
 
       .nav-link { padding: 10px;
+       
                   color: var(--navlink-color);
                   transition: background-color 1s ease-in-out;
                  }
@@ -193,23 +195,44 @@ header{ top:1px;
 
 
 
-header.darkmode {
+.darkmode,header {
             background: black;
-            color: white;
+            transition: 1s ease-in-out; 
+            color: pink;
           }
 
 html.darkmode {
             background: black;
-            color: white;
+            transition:  1s ease-in-out; 
+     
           }
 
- main.darkmode {
-            background: black;
-            color: white;
-          }
 
-     h2.darkmode {
-            background: black;}
-     h3.darkmode {
-                  background: black;}
 
+  
+
+nav.darkmode {      border: 0;
+                    padding:1%;
+                    background-color: #333;
+                    color: pink;
+                    box-shadow: 0 0 5px rgb(243, 160, 164), 0 0 10px  rgb(243, 160, 164), 0 0 20px  rgb(243, 160, 164);
+                  }
+ 
+
+                  input.darkmode {
+                    background-color:  #333;
+                    color: pink;
+                    border-radius: 50px;
+                    text-align: center;
+                    
+                  }
+
+                  .password.darkmode {
+                    background-color:  #333;
+                    color: pink;
+                    border-radius: 50px;
+                    text-align: center;
+                    
+                  }
+          
+               
