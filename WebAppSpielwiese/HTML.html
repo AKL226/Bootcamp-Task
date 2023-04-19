@@ -8,23 +8,56 @@
  
   </head>
   <body>
+    <div class="grid-container">
 
+    <div  id="Passwort"  > 
     <input type="password" id="passwordInput">
     <button id="showPasswordButton">Passwort anzeigen</button>
-  
+    </div>
+
+
+    <div  id="Update"  > 
     <input type="text" id="text-input" />
     <button id="update-button">Update</button>
+    </div>
 
 
-
-
+    <div id="Aufgaben" > 
     <h1>List Example</h1>
     <input type="text" id="input">
+
     <button id="addBtn">Add</button>
     <ul id="list"></ul>
     <button id="clearBtn">Clear List</button>
+    </div>
+  
 
+    <ul id="Liste">
+      <li>
+        <input type="checkbox" id="task1" name="task1">
+        <label for="task1">Aufgabe 1</label>
+        <button onclick="addDescription('task1')">Beschreibung hinzufügen</button>
+        <div class="description" id="task1-description"></div>
+      </li>
+      <li>
+        <input type="checkbox" id="task2" name="task2">
+        <label for="task2">Aufgabe 2</label>
+        <button onclick="addDescription('task2')">Beschreibung hinzufügen</button>
+        <div class="description" id="task2-description"></div>
+      </li>
+      <li>
+        <input type="checkbox" id="task3" name="task3">
+        <label for="task3">Aufgabe 3</label>
+        <button onclick="addDescription('task3')">Beschreibung hinzufügen</button>
+        <div class="description" id="task3-description"></div>
+      </li>
+    </ul>
     
+
+    </div>
+    
+
+
   </body>
 
 </html>
