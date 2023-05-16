@@ -50,6 +50,17 @@
   cursor: pointer;
 }
 
+.deleteBtnN {
+  margin-left: 10px;
+  background-color: #dd1414;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 
 button{
@@ -62,7 +73,7 @@ button{
 
 input{
   color:black;
-  font-size: 2rem;
+  font-size: 1,5rem;
   background-color: aqua;
   border-radius: 20px ;
   border-style: dotted;
@@ -83,25 +94,33 @@ input{
 }
 
 
-#Passwort
-{
+#Aufgaben1{
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#Aufgaben2{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#Aufgaben3{
   grid-column: 1;
   grid-row: 1;
 }
 
 
-#Update{
-  grid-column: 2;
-  grid-row: 1;
 
- }
 
- #Aufgaben{
-  grid-column: 1;
-  grid-row: 2;
+#input-field {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
 }
- 
-#Liste{
-  grid-column: 2;
-  grid-row: 2;
+
+.strikethrough {
+  text-decoration: line-through;
 }
+
+
+

@@ -7,57 +7,102 @@
     <link rel="stylesheet" href="CSS.css">
  
   </head>
+
+
   <body>
     <div class="grid-container">
 
-    <div  id="Passwort"  > 
-    <input type="password" id="passwordInput">
-    <button id="showPasswordButton">Passwort anzeigen</button>
-    </div>
+        <div  id="Passwort"  > 
+          <input type="password" id="passwordInput">
+          <button id="showPasswordButton">Passwort anzeigen</button>
+        </div>
 
 
-    <div  id="Update"  > 
-    <input type="text" id="text-input" />
-    <button id="update-button">Update</button>
-    </div>
+        <div  id="Update"  > 
+          <input type="text" id="text-input" />
+          <button id="update-button">Update</button>
+        </div>
 
 
-    <div id="Aufgaben" > 
-    <h1>List Example</h1>
-    <input type="text" id="input">
-
-    <button id="addBtn">Add</button>
-    <ul id="list"></ul>
-    <button id="clearBtn">Clear List</button>
-    </div>
-  
-
-    <ul id="Liste">
-      <li>
-        <input type="checkbox" id="task1" name="task1">
-        <label for="task1">Aufgabe 1</label>
-        <button onclick="addDescription('task1')">Beschreibung hinzufügen</button>
-        <div class="description" id="task1-description"></div>
-      </li>
-      <li>
-        <input type="checkbox" id="task2" name="task2">
-        <label for="task2">Aufgabe 2</label>
-        <button onclick="addDescription('task2')">Beschreibung hinzufügen</button>
-        <div class="description" id="task2-description"></div>
-      </li>
-      <li>
-        <input type="checkbox" id="task3" name="task3">
-        <label for="task3">Aufgabe 3</label>
-        <button onclick="addDescription('task3')">Beschreibung hinzufügen</button>
-        <div class="description" id="task3-description"></div>
-      </li>
-    </ul>
     
+      
+        <div ID=Zaehler> 
+          <h1>Zähler mit Speicher</h1>
+          <button id="incrementBtn">+</button>
+          <button id="decrementBtn">-</button>
+          <input  id="outputField" >
 
-    </div>
-    
+        </div> 
 
 
+        <div> 
+          <h1>Einfache Texteingabe mit Speicher</h1>
+          <input type="text" id="input-field" placeholder="Type something here...">
+        </div>
+
+
+        <div id="Aufgaben1" > 
+          <h1>Meine Aufgabenliste mit delete Button ohne local Storage</h1>
+          <input type="text" id="input">
+          <button id="addBtn">Add</button>
+          <ul id="list"></ul>
+   
+        </div>
+
+
+
+        <div id="Aufgaben2">
+            <h1>Meine Aufgabenliste ohne Beschreibung mit local Storage</h1>
+            <ul id="taskList3">
+            </ul>
+            <input type="text" id="newTask">
+            <button id="addTask">Aufgabe hinzufügen</button>
+        </div>
+
+      
+        <div id="Aufgaben3">
+                  <h1>Meine Aufgabenliste + Beschreibung + local Storage + clear Button + delete Button + Checkbox</h1>
+                  <form>
+                  <label for="taskNameN">Aufgabe:</label>
+                  <input type="text" id="taskNameN">
+                  <br>
+                  <label for="taskDescN">Beschreibung:</label>
+                  <textarea id="taskDescN"></textarea>
+                  <br>
+                  <button type="submit" id="addTaskN">Aufgabe hinzufügen</button>
+                  </form>
+                  <ul  id="taskListN">
+                   
+                  </ul>
+                  <button id="clearBtnN">Clear List</button>
+        </div>
+
+        <div id="checkbox">
+
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="html" value="HTML">
+                HTML
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="css" value="CSS">
+                CSS
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="javascript" value="JavaScript">
+                JavaScript
+              </label>
+            </li>
+          </ul>
+
+        </div>
+        
+  </div>
   </body>
 
 </html>
