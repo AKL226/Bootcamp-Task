@@ -291,7 +291,15 @@ function checkCheck(event) {
 }
 
 
-function clearListee() {localStorage.removeItem('tasksN');location.reload();}   // löscht den gesamten local storage
+function clearListee() {
+  const checkedItems = tasksN.filter(taskN => taskN.checked); // Filtere die Tasks, um nur diejenigen mit der "checked"-Eigenschaft auf true zu erhalten
+  checkedItems.forEach(taskN => {
+    const listItem = document.querySelector(`#check-button-${tasksN.indexOf(taskN)}`).parentElement;
+    listItem.remove(); // Entferne das Listenelement
+  });
+
+  tasksN = tasksN.filter(taskN => !taskN.checked); // Filtere die tasksN-Array, um die ausgewählten Elemente zu entfernen
+  localStorage.setItem("tasksN", JSON.stringify(tasksN));;}   // löscht den gesamten local storage
 
 
 // Beim Laden der Seite Elemente rendern
