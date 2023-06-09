@@ -1,0 +1,93 @@
+
+/* Header */
+@charset "UTF-8";
+
+
+/* Basis-Stile */
+* {
+  padding: 5px;
+  background-color: antiquewhite;
+}
+
+/* Klassen und IDs */
+.header {
+
+  color: rgb(204, 29, 29);
+  font-size: 1.5rem;
+}
+
+#main-content {
+  padding: 2rem;
+ 
+}
+
+body{
+    border-color: black;
+    box-sizing: 400px;
+    background-color: aqua;
+    width: 400px;
+    height: 600px;
+}
+
+#reloadButton{
+    background-color: #f5cd09;
+    color: black;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    margin: 40px;
+    
+}
+ 
+#colorRandom{
+  background-color: #f50950;
+  color: black;
+  font-size: 1.5rem;
+  position:sticky;
+  right: 0;
+  margin: 00px;
+  
+}
+
+header > * + * {
+  margin-top: 2rem !important;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 2rem;
+  }
+
+  header > * + * {
+    margin-top: unset !important;
+  }
+}
+
+input#red {
+  accent-color: red;
+}
+
+input#green {
+  accent-color: green;
+}
+
+input#blue {
+  accent-color: blue;
+}
+
+label {
+  font-size: 2rem;
+}
+
+#color-value {
+  font-size: 2rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  #color-value {
+    margin-left: auto;
+  }
+}
