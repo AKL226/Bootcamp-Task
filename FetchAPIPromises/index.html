@@ -6,9 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="script.js" ></script>
     <link rel="stylesheet" href="CSS.css">
-    <title>API And Fetch & Color </title>
+   
+    <title>API And Fetch & Color + VUE example </title>
 </head>
+
+
+
+
+
 <body>
+
+  <div id="app">
+  <button>{{ userName }}</button>
+  </div>
+ 
+  <script src="https://unpkg.com/vue@next"></script>
+
+  
+  <script>    
+        const app = Vue.createApp({
+              data(){
+                return{userName:"Arne Klußmann",};
+                    },
+  
+          }).mount("#app");
+          console.log(app.userName);
+   </script>
+  
+
+ 
+
+
 
   <div    id = "Zitate" h1="Zitate"> Zitate 
   <button id="reloadButton"  > Aktualisiere Zitate </button>
