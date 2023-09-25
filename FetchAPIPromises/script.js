@@ -123,5 +123,41 @@ document.querySelector("#colorRandom").addEventListener("click", function () {
     });
 });
 
+// --------------------------------------------------------------------------------------------------------------------
+
+//onst app = Vue.createApp({
+//  data(){
+//    return{userName:"Arne Klußmann",};
+//        },
+//
+//}).mount("#app");
+//console.log(app.userName);
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Erstelle eine <script>-Tag für die HTML 
+  const script = document.createElement('script');
+  script.src = "https://unpkg.com/vue@next";
+
+  // Füge das script zum head-Element hinzu, um Vue.js zu laden 
+  document.head.appendChild(script);
+
+  script.onload = function() {
+    // Vue.js wurde geladen und ist jetzt verfügbar
+    const app = Vue.createApp({
+      data() {
+        return {
+          userName: "Arne Klußmann",
+          vueVersion : "3",
+          vueHTML: '<h2> Übersicht </h2>',
+
+          }
+      }
+    });
+
+    app.mount('#app');
+  };
+});
+
 
 
