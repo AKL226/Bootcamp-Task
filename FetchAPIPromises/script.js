@@ -151,6 +151,8 @@ document.addEventListener("DOMContentLoaded", function() {
           vueVersion : "3",
           vueHTML: '<h2> Übersicht </h2>',
 
+          width: 200,
+          height: 400, 
           }
       }
     });
