@@ -9,13 +9,12 @@ Vue.createApp({
                 { emoji: '📅', name: 'date', ishidden: false }],
 
                 fruitBasket: [
-                  "🍏 Apple",
-                  "🍌 Banana",
-                  "🍉 Melon",
-                  "🫐 Blueberry",
-                  "🍓 Strawberry",
-                  "🍍 Ananas",
-                  "🥭 Mango"
+                  "🍏",
+                  "🍌",
+                  "🍉",
+                  "🍓",
+                  "🍍",
+                  "🥭"
                 ],
 
 
@@ -798,6 +797,9 @@ Vue.createApp({
       height:100,
       width:100,
 
+      isDarkMode: false
+      
+
     };
   },
 
@@ -815,19 +817,25 @@ Vue.createApp({
                   setIgnoreDataHeight(data,event){
                                 this[data] = event.target.value;}, 
 
-                   setIgnoreDataWidth(data,event){
+                  setIgnoreDataWidth(data,event){
                                   this[data] = event.target.value;},  
 
-            removeFruit(fruitToRemove) {
+                  removeFruit(fruitToRemove) {
                         this.fruitBasket = this.fruitBasket.filter((fruit) => {
                         return fruit !== fruitToRemove;   })},
 
                   
-                    toggleText() {
-                                    this.displayText = !this.displayText;},
-                        
+                  toggleText() {
+                          this.displayText = !this.displayText;},
 
-            
+
+                               
+                              
+                  toggleDarkMode() {
+                                this.isDarkMode = !this.isDarkMode;
+                                      // Ändere die Hintergrundfarbe des <body>-Elements basierend auf dem Dark-Mode-Zustand
+                                document.body.style.backgroundColor = this.isDarkMode ? '#333' : '#fff';},                                
+                                    
                   updateMousePosition(event) {
                    // this.mouseX = event.clientX;
                    // this.mouseY = event.clientY;

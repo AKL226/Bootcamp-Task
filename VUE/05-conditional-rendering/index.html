@@ -25,7 +25,7 @@
     </header>
     <main>
 
-
+      <div :style="{ background: isDarkMode ? '#333' : '#fff', color: isDarkMode ? '#fff' : '#333' }">
 
 
       <div id="app" class="inside">
@@ -34,7 +34,7 @@
 
             <button class="tab-box__nav-item" v-on:click="activeTab = 1"
             :class= "{ 'tab-box__navitems--active': activeTab === 1 }"
-            >Tab 1
+            >DiesDas
             </button>
 
 
@@ -67,6 +67,9 @@
             :class="{'tab-box__navitems--active': activeTab=== 1}">Books 2
             </button>
 
+            <button class="tab-box__nav-item" v-on:click="activeTab=8"
+            :class="{'tab-box__navitems--active': activeTab=== 8}">Switch
+            </button>
 
   
           </nav>
@@ -79,8 +82,8 @@
 
         
             <section v-if="activeTab==1" class=" tab-box__content-item">
-              <h2>Content 1</h2>
-              <p>This is the content of Tab 1.
+              <h2>alles drin</h2>
+              <p>beinhaltet behrere Aufgaben Felder
 
 
                 <ul> <li v-for=" (anzahl, name) in fruits" :key="fruit"> 
@@ -145,9 +148,9 @@
 <!-------------------------------------------------------------------------------------------------------------------->
 
             <section v-else-if="activeTab==2" class="tab-box__content-item tab-box__content--active">
-              <h2>Content 2</h2>
+              <h2>Früchtchen Auswahl</h2>
 
-              <p>This is the content of Tab 2.
+              <p> Ein/Ausblenden
                 <ul class="fruit-basket">
                   <li v-for="fruit in fruitBasket" :key="fruit" class="fruit-basket--item">
                     <span>{{ fruit }}</span>
@@ -309,7 +312,22 @@
                       </td>
                     </tr>
                   </tbody>
+                </table>
               </section>
+
+<!--8------------------------------------------------------------------------------------------------------->
+
+                <section v-else-if="activeTab == 8" class="tab-box__content-item">
+                  <h2>Switch on Switch of vue</h2>
+
+
+                    <div :style="{ background: isDarkMode ? '#333' : '#fff', color: isDarkMode ? '#fff' : '#333' }">
+                      <h1>Dark Mode Toggle</h1>
+                      <p>This is some content.</p>
+                      <button @click="toggleDarkMode">Toggle Dark Mode</button>
+                    </div>
+                    
+                </section>
 
 
 
