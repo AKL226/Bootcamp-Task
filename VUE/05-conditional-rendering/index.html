@@ -68,12 +68,16 @@
             </button>
 
 
+  
           </nav>
-
+  
+  
+  
+          <div class="tab-box__content tab-box tab-box__content--active">
 
 <!----------------------------------------------------------------------------------------------------------------------->
 
-          <div class="tab-box__content tab-box tab-box__content--active">
+        
             <section v-if="activeTab==1" class=" tab-box__content-item">
               <h2>Content 1</h2>
               <p>This is the content of Tab 1.
@@ -104,6 +108,38 @@
 
 
 
+                          <h2> MausiMaus </h2>
+                            <div @mousemove="updateMousePosition" style="height: 200px; border: 1px solid #ccc; position: relative;">
+                            <div style="position: absolute; top: 0; left: 0; padding: 10px;"> 
+                              
+                              
+                              <div ref="ignoreElement" :style="{ height: height + 'px', width: width + 'px', backgroundColor: 'lightblue', position: 'absolute', top: '50px', left: '50px' }">
+                                <!-- Element, dessen Bereich die Mausposition nicht aktualisieren soll -->
+                            </div>
+                            
+
+                            
+                            </div>
+                            </div>
+                            <p> ignore height :     {{height}} 
+                                ignore width :      {{width}} 
+                            </p>
+                             <div>  <input  :value="height" v-on:input="setIgnoreDataHeight('height',$event)">  </div>
+                             <div>  <input  :value="width"  v-on:input="setIgnoreDataWidth('width',$event)">    </div>
+
+                          <div style="margin-top: 20px;">
+                            <label>Show Mouse Position:</label>
+                            <input type="checkbox" v-model="showMousePosition">
+                          </div>
+                      
+                          <div v-if="showMousePosition">
+                            <div style="border: 1px solid #ccc; padding: 10px;">
+                              Mouse Position: {{ mouseXNotUpdating }}, {{ mouseYNotUpdating }}
+                            </div>
+                          </div>
+
+
+
             </section>
 
 <!-------------------------------------------------------------------------------------------------------------------->
@@ -112,14 +148,14 @@
               <h2>Content 2</h2>
 
               <p>This is the content of Tab 2.
-                <ul> 
-                  <li v-for = "(emoji, name) in fruitsE " :key="name"> 
-                      {{ emoji }} - <strong> {{ name }}</strong>
-                    </li>
+                <ul class="fruit-basket">
+                  <li v-for="fruit in fruitBasket" :key="fruit" class="fruit-basket--item">
+                    <span>{{ fruit }}</span>
+                    <button @click="removeFruit(fruit)">Remove</button>
+                  </li>
 
-                </ul>
-
-
+                <p v-if="displayText">{{ message }}</p>
+                <button @click="toggleText">Toggle Text</button>
               </p>
             </section>
 

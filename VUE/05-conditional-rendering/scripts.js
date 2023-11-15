@@ -3,7 +3,24 @@ Vue.createApp({
     return {
 
       fruits:{ 'Apple':'2','Banana':'5','Melon':'1', 'Cherry':'0'},
-      fruitsE:{ 'Apple':'😅','Banana':'😅','Melon':'😅', 'Cherry':'😅'},
+      fruitsE: [{ emoji: '🍎', name: 'apple', ishidden: false },
+                { emoji: '🍌', name: 'banana', ishidden: false },
+                { emoji: '🍒', name: 'cherry', ishidden: false },
+                { emoji: '📅', name: 'date', ishidden: false }],
+
+                fruitBasket: [
+                  "🍏 Apple",
+                  "🍌 Banana",
+                  "🍉 Melon",
+                  "🫐 Blueberry",
+                  "🍓 Strawberry",
+                  "🍍 Ananas",
+                  "🥭 Mango"
+                ],
+
+
+                displayText: false,
+                message: 'Hier ist der Text, den du anzeigen möchtest.',
 
       konzerne:[
         {
@@ -754,6 +771,9 @@ Vue.createApp({
           isBookmarked: false,
         },
       ],
+
+
+
       firstname:"Arne",
       surname:"Klussmann",
 
@@ -766,22 +786,74 @@ Vue.createApp({
       counter:0, // default Wert
       increaseValue:3, // erhöhung 
 
+
+      mouseX: 0,
+      mouseY: 0,
+
+      showMousePosition: false,
+      mouseXNotUpdating: 0,
+      mouseYNotUpdating: 0,
+
+
+      height:100,
+      width:100,
+
     };
   },
 
 
   methods:{ 
-    welcomeText(userName){
-                return `Hello ${userName}`;},
+                  welcomeText(userName){
+                              return `Hello ${userName}`;},
 
-  increaseCounter(value){  // Wert rein, neuer Wert raus 
-                           this.counter += value;},
+                 increaseCounter(value){  // Wert rein, neuer Wert raus 
+                                        this.counter += value;},
 
-    setUserName(data,event){
-                this[data] = event.target.value;},
+                  setUserName(data,event){
+                              this[data] = event.target.value;},
+
+                  setIgnoreDataHeight(data,event){
+                                this[data] = event.target.value;}, 
+
+                   setIgnoreDataWidth(data,event){
+                                  this[data] = event.target.value;},  
+
+            removeFruit(fruitToRemove) {
+                        this.fruitBasket = this.fruitBasket.filter((fruit) => {
+                        return fruit !== fruitToRemove;   })},
+
+                  
+                    toggleText() {
+                                    this.displayText = !this.displayText;},
+                        
+
+            
+                  updateMousePosition(event) {
+                   // this.mouseX = event.clientX;
+                   // this.mouseY = event.clientY;
+            
+               // Check if the mouse is over the specified element
+                      const ignoreElementRect = this.$refs.ignoreElement.getBoundingClientRect();
+                      if (
+                        this.showMousePosition &&
+                        (event.clientX < ignoreElementRect.left ||
+                        event.clientX > ignoreElementRect.right ||
+                        event.clientY < ignoreElementRect.top ||
+                        event.clientY > ignoreElementRect.bottom)
+                      ) {
+                        // Update only if showMousePosition is true and the mouse is outside the specified element
+                        this.mouseXNotUpdating = event.clientX;
+                        this.mouseYNotUpdating = event.clientY;
+                      }
+                                },
+
+
+                                removeColumn(index) {
+                                  // Set the hidden property to true to hide the column
+                                  this.$set(this.fruitsE, index, { ...this.fruitsE[index], hidden: true });
+                                }
+                },
   
-
-  },
 
   
 
