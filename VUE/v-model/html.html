@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passing Card</title>
+    <link rel="stylesheet" href="style.css" />
+ 
+   
+  </head>
+
+<body > 
+  <div id="app" class="inside"  >
+      <header>
+        
+            <div class="user-card">
+              <figure class="user-card__figure">
+                <img class="user-card__img" :src="image" alt="Hard to describe" />
+                <caption>
+                  <h2 class="user-card__hl">Attendee Pass</h2>
+                  <p>Coding Bootcamps Europe</p>
+                </caption>
+              </figure>
+            
+
+
+              <div class="user-card__data">
+                <h2>{{ displayName }}</h2>
+                <p><strong>Class:</strong> {{ displayClass }}</p>
+              </div>
+            </div>
+
+          </header>
+
+          <main >
+         
+            <form class="user-card__form">
+              <label for="person-name">Name</label>
+              <input id="person-name" name="person-name" v-model="personName" type="text" />
+          
+              <label for="class">Class</label>
+              <select id="class" v-model="selectedClass">
+                <option v-for="classItem in classes" :key="classItem.value" :value="classItem">
+                  {{ classItem.text }}
+                </option>
+              </select>
+            </form>
+        
+
+
+            <div>
+              <label for="red">r</label>
+              <input type="range" id="red" step="1" min="0" max="255" v-model="redValue">
+              {{ redValue }}
+            </div>
+            <div>
+              <label for="green">g</label>
+              <input type="range" id="green" step="1" min="0" max="255" v-model="greenValue">
+              {{ greenValue }}
+            </div>
+            <div>
+              <label for="blue">b</label>
+              <input type="range" id="blue" step="1" min="0" max="255" v-model="blueValue">
+              {{ blueValue }}
+            </div>
+
+
+          </div>
+        </main>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="script.js"></script>
+</body>
