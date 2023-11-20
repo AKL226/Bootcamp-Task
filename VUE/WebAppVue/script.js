@@ -2,8 +2,12 @@
 
     data(){ return {
 
+
+      checked: false,
+      prio: false,
       taskNameN: '',
       taskDescN: '',
+
       tasksN: JSON.parse(localStorage.getItem('tasksN')) || []
     };
   },
@@ -23,13 +27,14 @@
                                 <button class="deleteBtnN" @click="deleteItemN(${index})">X</button>`;
           taskListN.appendChild(listItem);
         });
+        
       },
       addTaskN() {
         if (!this.taskNameN.trim()) {
           return;
         }
   
-        this.tasksN.push({ name: this.taskNameN, desc: this.taskDescN, checked: false });
+        this.tasksN.push({ name: this.taskNameN, desc: this.taskDescN, checked: false , prio: false });
         localStorage.setItem('tasksN', JSON.stringify(this.tasksN));
   
         this.taskNameN = '';
@@ -51,6 +56,14 @@
         localStorage.setItem("tasksN", JSON.stringify(this.tasksN));
       
       },
+
+
+      prio(index) {
+        this.tasksN[index].prio = !this.tasksN[index].prio;
+        localStorage.setItem("tasksN", JSON.stringify(this.tasksN));
+      
+      },
+
       clearListee() {
         const checkedItems = this.tasksN.filter(task => task.checked);
         checkedItems.forEach(task => {

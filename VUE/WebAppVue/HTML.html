@@ -46,7 +46,10 @@
                 <div id="aufgaben">
                   <ul id="taskListN">
                     <li v-for="(task, index) in tasksN" :key="index">
-                      <input type="checkbox" class="check" v-model="task.checked"> 
+
+                      <input type="checkbox" class="check" v-model="task.checked" @click="checkCheck(index)"> 💯
+                      <input type="checkbox" class="prio" v-model="task.prio" @click="prio(index)">🚩 
+
                       <strong>{{ task.name }}</strong>{{ task.desc }}
                       <button class="deleteBtnN" @click="deleteItemN(index)">X</button>
                     </li>
@@ -63,7 +66,7 @@
             </div>
 
             <script src="https://unpkg.com/vue@3"></script>
-          <script src="script.js"></script>
+            <script src="script.js"></script>
 </body>
 
 
