@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vue Notizen</title>
+  <link rel="stylesheet" href="style.css" />
+
+
+
+</head>
+
+
+
+<body>
+
+     <div id="app">
+              <div class="grid-container">
+                <div id="ueberschrift">
+                  <h1>Notizen</h1>
+                </div>
+
+                <div id="aufgabe">
+                  <label for="taskNameN">Aufgabe:</label>
+                </div>
+
+                <div id="aufgabeEingabe">
+                  <input type="text" id="taskNameN" v-model="taskNameN"><br>
+                </div>
+
+                <div id="beschreibung">
+                  <label for="taskDescN"> Beschreibung:</label>
+                </div>
+
+                <div id="beschreibungEingabe">
+                  <input id="taskDescN" v-model="taskDescN"><br>
+                </div>
+
+                <div id="hinzufuegen">
+                  <form @submit.prevent="addTaskN">
+                    <button type="submit" id="addTaskN">Aufgabe hinzufügen</button>
+                  </form>
+                </div>
+
+                <div id="aufgaben">
+                  <ul id="taskListN">
+                    <li v-for="(task, index) in tasksN" :key="index">
+                      <input type="checkbox" class="check" v-model="task.checked"> 
+                      <strong>{{ task.name }}</strong>{{ task.desc }}
+                      <button class="deleteBtnN" @click="deleteItemN(index)">X</button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div id="clear">
+                  <button id="clearBtnN" @click="clearListee">Clear List</button>
+                </div>
+
+                <div id="consoleOutput"></div>
+              </div>
+
+            </div>
+
+            <script src="https://unpkg.com/vue@3"></script>
+          <script src="script.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
