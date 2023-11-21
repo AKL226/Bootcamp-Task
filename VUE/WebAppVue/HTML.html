@@ -26,7 +26,7 @@
                 </div>
 
                 <div id="aufgabeEingabe">
-                  <input type="text" id="taskNameN" v-model="taskNameN"><br>
+                  <input type="text" id="taskNameN" v-model="taskNameN"   v-on:keyup.enter="focusNextField('taskDescN')" placeholder="Aufgabe" ><br>
                 </div>
 
                 <div id="beschreibung">
@@ -34,7 +34,7 @@
                 </div>
 
                 <div id="beschreibungEingabe">
-                  <input id="taskDescN" v-model="taskDescN"><br>
+                  <input ref="taskDescN" id="taskDescN" v-model="taskDescN" placeholder="Beschreibung" ><br>
                 </div>
 
                 <div id="hinzufuegen">
@@ -48,7 +48,7 @@
                     <li v-for="(task, index) in tasksN" :key="index">
 
                       <input type="checkbox" class="check" v-model="task.checked" @click="checkCheck(index)"> 💯
-                      <input type="checkbox" class="prio" v-model="task.prio" @click="prio(index)">🚩 
+                      <input type="checkbox" class="priori" v-model="task.priori" @click="prioMethode(index)">🚩 
 
                       <strong>{{ task.name }}</strong>{{ task.desc }}
                       <button class="deleteBtnN" @click="deleteItemN(index)">X</button>
