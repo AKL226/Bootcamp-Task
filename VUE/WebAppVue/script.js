@@ -18,26 +18,16 @@
     methods: {
 
       focusNextField( nextField) {    
-          // Verweisen Sie auf das nächste Eingabefeld
-      
+
+                                // ref ist schlüsselanwendung
           const nextFieldZiel = this.$refs[nextField];
-    
-          // Setzen Sie den Fokus auf das nächste Eingabefeld
-       
-            console.log(nextFieldZiel);
             nextFieldZiel.focus();
-       
-    },
-
-
-
+           },
 
       addTaskN() {
         this.tasksN.push({ name: this.taskNameN, desc: this.taskDescN, checked: false , priori: false });
         localStorage.setItem('tasksN', JSON.stringify(this.tasksN));
       },
-
-
 
       deleteItemN(index) {
         this.tasksN.splice(index, 1);
