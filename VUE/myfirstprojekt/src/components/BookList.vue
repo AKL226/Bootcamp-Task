@@ -79,13 +79,6 @@ export default {
 Tabelle-----------------------------
 
 <style scoped>
-.table-item__table {
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.9em;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  width: 100%;
-}
 .table-item__table-head-name {
   width: 65%;
 }
